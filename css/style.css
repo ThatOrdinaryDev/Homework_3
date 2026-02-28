@@ -22,4 +22,6 @@ footer-icon-social {
     justify-content: center;
     align-items: center;
     gap: 12px;
+    height: 32px;
+    width: auto;
 }
