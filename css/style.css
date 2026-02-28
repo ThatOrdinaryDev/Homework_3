@@ -16,3 +16,10 @@ img {
     width: 40em;
     max-width: 90%;
 }
+
+footer-icon-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
