@@ -6,34 +6,24 @@ css: /css/contactPage.css
 
 <link rel="stylesheet" href="{{ '/contactPage.css' | relative_url }}">
 
-<section class="contact-section">
-    <div class="contact-info">
-        <h2>Contact Information</h2>
-        <div class="info-item">
-            <i class="fas fa-envelope"></i>
-            <div><strong>Email</strong><p>sussysu1001@gmail.com</p></div>
-        </div>
-        <div class="info-item">
-            <i class="fas fa-map-market-alt"></i>
-            <div><strong>Location</strong><p>Salt Lake, Utah</p></div>
-        </div>
-        <div class="social-circles">
-            <p>Connect With Me Via</p>
-            <a href="https://github.com/ThatOrdinaryDev"><i class="fab fa-github"></i></a>
-            <a href="https://x.com/IamNOONEXDD"><i class="fab fa-twitter"></i></a>
-        </div>
-    </div>
-
-    <div class="contact-info">
-        <h2>Feel Free To Send Me a Message</h2>
-        <form>
-            <div class="form-row">
-                <input type="text" placeholder="Name">
-                <input type="text" placeholder="Email">
+<body>
+    <div class="contact-container">
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+            <div class="contact-left-title">
+                <h2>Send Me a Message</h2>
+                <hr>
             </div>
-            <input type="text" placeholder="Subject">
-            <textarea placeholder="Anything fun that you want to discuss with me?"></textarea>
-            <button type="submit">Send Message</button>
+            <input type="hidden" name="access_key" value="06602ecb-f2d9-42c5-bf3e-30301086ad68">
+            <input type="text" name="name" placeholder="Name"
+                class="contact-input" required>
+            <input type="text" name="email" placeholder="Email"
+                class="contact-input" required>
+            <textarea name="Message" placeholder="Tell me about it"
+                class="contact-input" required></textarea>
+            <button type="submit">Submit</button>
         </form>
+        <div class="contact-right">
+            <img src="../assets/image/other/FB_IMG_1771240450992.jpg" alt="img">
+        </div>
     </div>
-</section>
+</body>
