@@ -30,3 +30,17 @@ footer-icon-social {
     text-decoration: none;
 }
 
+.card-img-top {
+    flex-wrap: wrap;
+    display: flex;
+    gap: 20px;
+    object-fit: cover;
+}
+
+.card {
+    flex: 1 1 250px;
+    box-sizing: border-box;
+}
+
+
+
