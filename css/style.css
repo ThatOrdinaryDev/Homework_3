@@ -25,3 +25,7 @@ footer-icon-social {
     height: 32px;
     width: auto;
 }
+
+.footer-icon-social a {
+    text-decoration: none;
+}
