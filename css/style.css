@@ -21,7 +21,7 @@ footer-icon-social {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 12px;
+    margin: 0 10px;
     height: 32px;
     width: auto;
 }
