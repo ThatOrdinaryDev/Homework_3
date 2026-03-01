@@ -30,11 +30,3 @@ footer-icon-social {
     text-decoration: none;
 }
 
-.card-img-top {
-  height: 220px;
-  object-fit: cover;
-}
-
-.card {
-  background: #1f2523;
-}
