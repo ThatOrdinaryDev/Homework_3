@@ -1,0 +1,7 @@
+.profile-img {
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    border: 6px salmon;
+    margin-bottom: 20px;
+}
