@@ -1,5 +1,5 @@
 .top-sec {
-    height: 100vh;
+    height: 50vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -39,7 +39,7 @@
 }
 
 .resume-sec {
-    height: 100vh;
+    height: 50vh;
     display: flex;
     align-items: center;
     justify-content: center;
