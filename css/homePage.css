@@ -12,7 +12,16 @@
     height: 180px;
     width: 180px;
     border-radius: 50%;
-    border: 6px salmon;
+    border: 20px salmon;
     margin-bottom: 20px;
+    object-fit: cover;
+}
+
+.top-sec-container h1 {
+    font-weight: 600;
+}
+
+.top-sec-container p {
+    font-weight: 400;
 }
 
