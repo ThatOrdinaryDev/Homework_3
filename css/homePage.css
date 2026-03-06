@@ -35,4 +35,12 @@
 
 .about-sec {
     text-align: justify;
+    display: flex;
+}
+
+.resume-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
