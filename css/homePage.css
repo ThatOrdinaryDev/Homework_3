@@ -4,6 +4,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    color: black;
 }
 
 
@@ -14,3 +15,18 @@
     border: 6px salmon;
     margin-bottom: 20px;
 }
+
+.profile-img:hover {
+    border: 6px rgb(164, 84, 75);
+}
+
+.top-sec p {
+    margin-top: 10px;
+    font-size: 24px;
+}
+
+.top-sec h1 {
+    font-weight: 400;
+    font-size: 55px;
+}
+
