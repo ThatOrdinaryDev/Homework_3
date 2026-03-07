@@ -81,8 +81,8 @@ body {
 }
 
 .footer-icon-social i:hover {
-    color: cyan;
-    transform: scale(1.6);
+  color: var(--accent-color);
+  transform: scale(1.6);
 }
 
 .modal-body .btn {
