@@ -37,6 +37,14 @@ body {
     padding:10px 40px;
 }
 
+.footer {
+    text-align: center;
+}
 
+#footer #icon {
+    display: block;
+    margin-bottom: 1em;
+    font-size: 3em;
+}
 
 
