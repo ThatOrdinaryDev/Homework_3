@@ -80,7 +80,7 @@ body {
   transform: scale(1.6);
 }
 
-.btn {
+.modal-body .btn {
   position: relative;
   padding: 1.5rem 3rem;
   font-size: 1.1rem;
