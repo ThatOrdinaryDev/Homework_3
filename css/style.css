@@ -4,8 +4,37 @@ body {
     text-align: center;
 }
 
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
 
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    transition: all 0.3s ease;
+}
 
+.nav-link {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
 
+.nav-blur-bg {
+    background: rgba(red, green, blue, 0.6);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.nav-shrink .container {
+    padding: 10px 40px;
+}
 
 
