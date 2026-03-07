@@ -43,9 +43,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#" data-bs-toggle="modal"
                             data-bs-target="#passForm">
-                            <i class="material-icons"
-                                style="font-size:10px;color:white">folder</i>
-                            Bao's Archive
+                            Archive
                         </a>
                     </li>
                 </ul>
@@ -56,22 +54,25 @@
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content bg-black text-white rounded-4">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="passFormLabel">Hey! What's the
-                        password?</h5>
+                    <h5 class="modal-title" id="passFormLabel">Nuh Uh! This is
+                        not for public. Password please!</h5>
                     <button type="button" class="btn-close btn-close-white"
                         data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form id="passwordForm">
+                    <form class="passForm" id="passwordForm">
                         <div class="mb-3">
                             <label for="passwordInput"
                                 class="form-label">Password</label>
                             <input type="password" class="form-control"
-                                id="passwordInput" placeholder="Password?"
-                                required>
+                                id="passwordInput"
+                                placeholder="I guess we never know..." required>
                         </div>
-                        <button type="submit"
-                            class="btn btn-danger w-100">Submit</button>
+                        <button type="submit" class="btn magnetic w-100">
+                            <span>Check</span>
+                            <div class="particles-field"
+                                id="particleField"></div>
+                        </button>
                     </form>
                 </div>
             </div>
@@ -84,37 +85,33 @@
     </main>
     <footer class="bg-dark text-light py-4 mt-auto">
         <div class="footer-container text-center">
-            <p>Contact me via</p>
+            <p class="contact-me-line">Contact me via</p>
             <ul class="footer-icon-social">
                 <li> <a href="https://github.com/ThatOrdinaryDev"
-                        target="_blank"> <i class="fab fa-github-alt"
-                            style="font-size:20px;color: white"></i> </a></li>
+                        target="_blank"> <i class="fab fa-github-alt"></i>
+                    </a></li>
                 <li> <a href="https://x.com/IamNOONEXDD" target="_blank">
-                        <i class="fab fa-twitter"
-                            style="font-size:20px;color: white"></i>
+                        <i class="fab fa-twitter"></i>
                     </a></li>
                 <li> <a href="https://discord.com/users/m_m_idk123"
                         target="_blank">
-                        <i class="fab fa-discord"
-                            style="font-size:20px;color: white"></i>
+                        <i class="fab fa-discord"></i>
                     </a> </li>
                 <li> <a href="<li> <a href="
                         https://www.facebook.com/profile.php?id=61550888168516"
                         target="_blank">
-                        <i class="fab fa-facebook"
-                            style="font-size:20px;color: white"></i>
+                        <i class="fab fa-facebook"></i>
                     </a> </li>
                 <li> <a href="<li> <a href="
                         https://www.linkedin.com/in/quoc-bao-dang-4ba8123b5/"
                         target="_blank">
-                        <i class="fab fa-linkedin"
-                            style="font-size:20px;color: white"></i>
+                        <i class="fab fa-linkedin"></i>
                     </a> </li>
             </ul>
             <div class="footer-divider"></div>
             <p class="mb-2">© <script>
-					document.write(new Date().getFullYear())
-				</script> Quoc Bao Dang. All rights reserved.</p>
+          document.write(new Date().getFullYear())
+        </script> Quoc Bao Dang. All rights reserved.</p>
         </div>
     </footer>
     <script
