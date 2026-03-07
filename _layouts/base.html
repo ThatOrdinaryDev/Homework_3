@@ -43,7 +43,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#" data-bs-toggle="modal"
                             data-bs-target="#passForm">
-                            Archive
+                            <i class="material-icons"
+                                style="font-size:10px;color:white">folder</i>
+                            Bao's Archive
                         </a>
                     </li>
                 </ul>
@@ -54,25 +56,22 @@
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content bg-black text-white rounded-4">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="passFormLabel">Nuh Uh! This is
-                        not for public. Password please!</h5>
+                    <h5 class="modal-title" id="passFormLabel">Hey! What's the
+                        password?</h5>
                     <button type="button" class="btn-close btn-close-white"
                         data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form class="passForm" id="passwordForm">
+                    <form id="passwordForm">
                         <div class="mb-3">
                             <label for="passwordInput"
                                 class="form-label">Password</label>
                             <input type="password" class="form-control"
-                                id="passwordInput"
-                                placeholder="I guess we never know..." required>
+                                id="passwordInput" placeholder="Password?"
+                                required>
                         </div>
-                        <button type="submit" class="btn magnetic w-100">
-                            <span>Check</span>
-                            <div class="particles-field"
-                                id="particleField"></div>
-                        </button>
+                        <button type="submit"
+                            class="btn btn-danger w-100">Submit</button>
                     </form>
                 </div>
             </div>
@@ -97,19 +96,21 @@
                         target="_blank">
                         <i class="fab fa-discord"></i>
                     </a> </li>
-                <li> <a href=" https://www.facebook.com/profile.php?id=61550888168516"
+                <li> <a
+                        href="https://www.facebook.com/profile.php?id=61550888168516"
                         target="_blank">
                         <i class="fab fa-facebook"></i>
                     </a> </li>
-                <li> <a href=" https://www.linkedin.com/in/quoc-bao-dang-4ba8123b5/"
+                <li> <a
+                        href="https://www.linkedin.com/in/quoc-bao-dang-4ba8123b5/"
                         target="_blank">
                         <i class="fab fa-linkedin"></i>
                     </a> </li>
             </ul>
             <div class="footer-divider"></div>
             <p class="mb-2">© <script>
-          document.write(new Date().getFullYear())
-        </script> Quoc Bao Dang. All rights reserved.</p>
+					document.write(new Date().getFullYear())
+				</script> Quoc Bao Dang. All rights reserved.</p>
         </div>
     </footer>
     <script
@@ -117,5 +118,4 @@
         defer></script>
     <script src="{{ '/js/stickyNavbar.js' | relative_url }}"></script>
     <script src="{{ '/js/secretPassword.js' | relative_url }}"></script>
-    <script src="{{ '/js/particleField.js' | relative_url }}"></script>
 </body>
