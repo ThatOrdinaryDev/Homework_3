@@ -3,13 +3,10 @@
     top: 0;
     width: 100%;
     transition: all 0.3s ease;
-    z-index: 1000;
 }
 
 .container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 20px 40px;
     transition: all 0.3s ease;
 }
