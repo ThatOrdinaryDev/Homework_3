@@ -1,12 +1,15 @@
 .project-container {
     display: block;
-    width: 100%;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .card {
     border: 1px solid black;
+    height: 250px;
+    width: 250px;
     float: left;
     margin: 1px;
     padding: 10px 3px;
-    width: calc(100% / 5 - 10px);
 }
