@@ -8,6 +8,7 @@ body {
 }
 
 #navbar {
+    overflow: hidden;
     position: fixed;
     top: 0;
     width: 100%;
@@ -114,12 +115,14 @@ body {
     -webkit-text-fill-color: transparent;
     background-size: 500% auto;
     animation: gradient 10s ease-in-out infinite alternate;
+    float: left;
 }
 
 .navbar-nav {
     gap: 20px;
     font-family: Orbitron;
     font-size: 12px;
+    float: right;
 }
 
 .footer-container .mb-2 {
