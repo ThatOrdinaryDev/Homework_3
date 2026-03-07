@@ -79,3 +79,12 @@ body {
   color: cyan;
   transform: scale(1.6);
 }
+
+.modal-body .btn {
+  background: gold;
+}
+
+.modal-body .btn:hover {
+  color: black;
+  background: rgb(219, 187, 2);
+}
