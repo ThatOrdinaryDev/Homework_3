@@ -5,10 +5,10 @@ document.addEventListener('scroll', () => {
     let currentScroll = window.scrollY;
 
     if (currentScroll > 50) {
-        navbar.classList.add("nav-blur-bg");
-        navbar.classList.add("nav-shrink");
+        navbar.classList.add("nav-glass");
+        navbar.classList.add("nav-small");
     } else {
-        navbar.classList.add("nav-blur-bg");
-        navbar.classList.add("nav-shrink");
+        navbar.classList.add("nav-glass");
+        navbar.classList.add("nav-small");
     }
 });
