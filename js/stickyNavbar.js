@@ -4,7 +4,6 @@ window.addEventListener("scroll", () => {
 
   let currentScroll = window.scrollY;
 
-  /* GLASS + SHRINK */
   if(currentScroll > 50){
     navbar.classList.add("nav-glass");
     navbar.classList.add("nav-small");
