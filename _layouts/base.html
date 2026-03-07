@@ -42,28 +42,28 @@ css: /css/style.css
                         <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#passForm">Secret Archive</a>
                     </li>
                 </ul>
-                <div class="modal" id="passForm" tabindex="-1">
-                    <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content bg-black text-white rounded-4">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="passFormLabel">Hey! What's the password?</h5>
-                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <form id="passwordForm">
-                                    <div class="mb-3">
-                                        <label for="passwordInput" class="form-label">Password</label>
-                                        <input type="password" class="form-control" id="passwordInput" placeholder="Password?" required>
-                                    </div>
-                                    <button type="submit" class="btn btn-danger w-100">Submit</button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </nav>
+    <div class="modal fade" id="passForm" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-black text-white rounded-4">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="passFormLabel">Hey! What's the password?</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="passwordForm">
+                        <div class="mb-3">
+                            <label for="passwordInput" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="passwordInput" placeholder="Password?" required>
+                        </div>
+                        <button type="submit" class="btn btn-danger w-100">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
     <main class="content-container my-4 flex-grow-1">
         {{ content }}
     </main>
