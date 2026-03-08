@@ -88,6 +88,8 @@
 }
 
 .project-card:hover {
+    background: #3a3a3a;
+    transition: 0.3s ease-in-out;
     transform: translateY(-10px);
 }
 
