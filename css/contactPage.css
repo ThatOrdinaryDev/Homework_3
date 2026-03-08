@@ -106,6 +106,7 @@
   background-size: 500% auto;
   animation: gradient 10s ease-in-out infinite alternate;
   transition: transform 0.3s;
+  float: left;
 }
 
 .contact-left-title hr {
@@ -118,7 +119,7 @@
 }
 
 .contact-input {
-  width: 700px;
+  width: 100%;
   height: 50px;
   border: none;
   outline: none;
@@ -196,8 +197,54 @@
   border-radius: 20px;
 }
 
-@media (max-width: 800px) {
-  .contact-input {
-    width: 80vw;
+.holographic-card-2 {
+  width: 100px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  transition: all 0.5s ease;
+}
+
+.holographic-card-2 h2 {
+  color: #0ff;
+  font-size: 2rem;
+  position: relative;
+  z-index: 2;
+}
+
+.holographic-card-2::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(0deg,
+      transparent,
+      transparent 30%,
+      rgba(255, 255, 0, 0.3));
+  transform: rotate(-45deg);
+  transition: all 0.5s ease;
+  opacity: 0;
+}
+
+.holographic-card-2:hover {
+  transform: scale(1);
+  box-shadow: 0 0 20px rgba(255, 255, 0, 0.5);
+}
+
+.holographic-card-2:hover::before {
+  opacity: 1;
+  transform: rotate(-45deg) translateY(100%);
+}
+
+
+@media (max-width: 900px) {
+  .contact-container {
+    flex-direction: column;
   }
 }
