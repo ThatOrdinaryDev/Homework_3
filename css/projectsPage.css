@@ -23,10 +23,14 @@
 }
 
 .section-description {
-    font-weight: 400;
+    font-weight: 650;
     align-items: start;
     margin-bottom: 40px;
     margin-top: 20px;
+}
+
+.here-word {
+    font-weight: 650;
 }
 
 .title-underline {
@@ -104,6 +108,7 @@
 }
 
 .project-title {
+    font-weight: 700;
     font-size: 1.5em;
     margin: 0 0 10px 0;
 }
