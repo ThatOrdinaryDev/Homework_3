@@ -24,7 +24,7 @@
 
 .section-description {
     font-weight: 400;
-    float: left;
+    align-items: start;
     margin-bottom: 40px;
 }
 
