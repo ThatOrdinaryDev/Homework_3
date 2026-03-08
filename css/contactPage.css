@@ -66,15 +66,8 @@
   cursor: pointer;
 }
 
-.contact-right img{
-  width: 500px;
-}
-
 @media (max-width:800px) {
   .contact-input{
     width: 80vw;
-  }
-  .contact-right{
-    display: none;
   }
 }
