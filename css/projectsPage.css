@@ -7,19 +7,31 @@
 .section-title {
     font-weight: 700;
     text-align: start;
-    margin-bottom: 40px;
+    background: #f6aa1c;
+    background: linear-gradient(90deg,
+            rgba(246, 170, 28, 1) 0%,
+            rgba(98, 23, 8, 1) 42%,
+            rgba(148, 27, 12, 1) 65%,
+            rgba(188, 57, 8, 1) 85%,
+            rgba(246, 170, 28, 1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 500% auto;
+    animation: gradient 10s ease-in-out infinite alternate;
+    transition: transform 0.3s;
 }
 
 .section-description {
     font-weight: 400;
-    text-align: start;
+    float: left;
     margin-bottom: 40px;
 }
 
 .title-underline {
     align-items: start;
     height: 5px;
-    width: 40%;
+    width: 20%;
     background: #f6aa1c;
     background: linear-gradient(90deg,
             rgba(246, 170, 28, 1) 0%,
@@ -28,6 +40,10 @@
             rgba(148, 27, 12, 1) 65%,
             rgba(188, 57, 8, 1) 85%,
             rgba(246, 170, 28, 1) 100%);
+    -webkit-text-fill-color: transparent;
+    background-size: 500% auto;
+    animation: gradient 10s ease-in-out infinite alternate;
+    transition: transform 0.3s;
 }
 
 @keyframes gradient {
