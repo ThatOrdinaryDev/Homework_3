@@ -1,15 +1,102 @@
-.project-container {
+.projects {
+    padding: 40px 20px;
+    color: aliceblue;
+    font-family: sans-serif;
+}
+
+.section-title {
+    font-weight: 700;
+    text-align: start;
+    margin-bottom: 40px;
+}
+
+.underline {
+
+    background: #f6aa1c;
+    background: linear-gradient(90deg,
+            rgba(246, 170, 28, 1) 0%,
+            rgba(34, 9, 1, 1) 20%,
+            rgba(98, 23, 8, 1) 42%,
+            rgba(148, 27, 12, 1) 65%,
+            rgba(188, 57, 8, 1) 85%,
+            rgba(246, 170, 28, 1) 100%);
+    -webkit-text-fill-color: transparent;
+    background-size: 500% auto;
+    animation: gradient 10s ease-in-out infinite alternate;
+    transition: transform 0.3s;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    25% {
+        background-position: 50% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    75% {
+        background-position: 50% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.content-grid {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.project-card {
+    flex: 0 1 350px;
+    background-color: #1e1e1e;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    border: 1px solid #333;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+.project-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.card-content {
     padding: 20px;
 }
 
-.card {
-    border: 1px solid black;
-    height: 250px;
-    width: 250px;
-    margin: 1px;
-    padding: 10px 3px;
+.project-title {
+    font-size: 1.5em;
+    margin: 0 0 10px 0;
+}
+
+.project-description {
+    color: #b3b3b3;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.tags span {
+    display: inline-block;
+    background: #333;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    margin-top: 15px;
+    margin-right: 5px;
 }
