@@ -1,7 +1,7 @@
 .projects {
     padding: 40px 20px;
     color: aliceblue;
-    font-family: sans-serif;
+    font-family: Orbitron;
 }
 
 .section-title {
@@ -27,6 +27,7 @@
     align-items: start;
     margin-bottom: 40px;
     margin-top: 20px;
+    font-family: Orbitron;
 }
 
 .here-word {
@@ -111,16 +112,19 @@
     font-weight: 700;
     font-size: 1.5em;
     margin: 0 0 10px 0;
+    font-family: Orbitron;
 }
 
 .project-description {
     color: #b3b3b3;
     font-size: 0.95rem;
     line-height: 1.5;
+    font-family: Orbitron;
 }
 
 .tags span {
     display: inline-block;
+    font-family: Orbitron;
     background: #333;
     padding: 4px 10px;
     border-radius: 10px;
@@ -132,4 +136,5 @@
 
 .made-with-text {
     font-weight: 600;
+    font-family: Orbitron;
 }
