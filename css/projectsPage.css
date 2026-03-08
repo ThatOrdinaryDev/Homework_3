@@ -10,8 +10,16 @@
     margin-bottom: 40px;
 }
 
-.underline {
+.section-description {
+    font-weight: 400;
+    text-align: start;
+    margin-bottom: 40px;
+}
 
+.underline {
+    align-items: start;
+    height: 5px;
+    width: 40%;
     background: #f6aa1c;
     background: linear-gradient(90deg,
             rgba(246, 170, 28, 1) 0%,
