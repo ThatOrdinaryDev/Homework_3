@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
 .contact-section {
   padding: 80px 10%;
 }
@@ -201,6 +204,26 @@
   transform: rotate(-45deg) translateY(100%);
 }
 
+.contact-title-underline {
+  align-items: start;
+  height: 5px;
+  width: 10%;
+  background: #f6aa1c;
+  background: linear-gradient(
+    90deg,
+    rgba(246, 170, 28, 1) 0%,
+    rgba(34, 9, 1, 1) 20%,
+    rgba(98, 23, 8, 1) 42%,
+    rgba(148, 27, 12, 1) 65%,
+    rgba(188, 57, 8, 1) 85%,
+    rgba(246, 170, 28, 1) 100%
+  );
+  -webkit-text-fill-color: transparent;
+  background-size: 500% auto;
+  animation: gradient 10s ease-in-out infinite alternate;
+  transition: transform 0.3s;
+  border-radius: 20px;
+}
 
 
 @media (max-width: 900px) {
