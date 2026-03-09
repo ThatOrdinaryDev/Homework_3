@@ -137,6 +137,7 @@
 }
 
 .edu-n-exp-heading {
+    text-align: start;
     font-family: Orbitron;
     font-size: 40px;
     font-weight: 800;
