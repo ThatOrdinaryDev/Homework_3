@@ -47,28 +47,153 @@
 
 .top-sec p {
     font-size: 24px;
-    font-weight: 400;
+    font-weight: 600;
     font-family: Orbitron;
 }
 
-.resume-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
 
 .about-sec {
-    text-align: justify;
-    display: flex;
+    text-align: center;
+    padding: 120px 20px;
+    background: #1f1f1f;
+    max-width: 900px;
+    margin: auto;
 }
 
-.resume-sec {
-    height: 50vh;
+.section-heading {
+    font-size: 48px;
+    font-weight: 600;
+    font-family: Orbitron;
+}
+
+.about-underline {
+    height: 5px;
+    width: 60px;
+    background: #f6aa1c;
+    background: linear-gradient(90deg,
+            rgba(246, 170, 28, 1) 0%,
+            rgba(34, 9, 1, 1) 20%,
+            rgba(98, 23, 8, 1) 42%,
+            rgba(148, 27, 12, 1) 65%,
+            rgba(188, 57, 8, 1) 85%,
+            rgba(246, 170, 28, 1) 100%);
+    -webkit-text-fill-color: transparent;
+    background-size: 500% auto;
+    animation: gradient 10s ease-in-out infinite alternate;
+    transition: transform 0.3s;
+    border-radius: 20px;
+    margin: 10px, auto, 40px;
+}
+
+.about-description {
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.8;
+    font-size: 18px;
+    color: white;
+    font-family: Orbitron;
+}
+
+.about-item h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: white;
+    font-family: Orbitron;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.about-item p {
+    color: white;
+    font-family: Orbitron;
+}
+
+.about-btn {
+    display: inline-block;
+    margin-top: 60px;
+    padding: 14px 32px;
+    background: linear-gradient(270deg, #ff944f, #fa6d86);
+    color: white;
+    border-radius: 12px;
+    font-family: Orbitron;
+    font-weight: 600;
+}
+
+.resume-container {
+    margin-top: 80px;
+}
+
+.button-group {
+    margin-top: 20px;
     display: flex;
-    align-items: center;
     justify-content: center;
-    text-align: center;
+    gap: 20px;
+}
+
+.btn-download {
+    padding: 14px 28px;
+    background: linear-gradient(270deg, #ff944f, #fa6d86);
+    color: white;
+    border-radius: 12px;
+    font-family: Orbitron;
+}
+
+.btn-outline {
+    padding: 14px 28px;
+    border: 1px solid #ff944f;
+    color: white;
+    border-radius: 12px;
+    font-family: Orbitron;
+}
+
+.about-holographic-card {
+    width: 100px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    transition: all 0.5s ease;
+}
+
+.about-holographic-card h2 {
+    color: #0ff;
+    font-size: 2rem;
+    position: relative;
+    z-index: 2;
+}
+
+.about-holographic-card::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(0deg,
+            transparent,
+            transparent 30%,
+            rgba(255, 255, 0, 0.3));
+    transform: rotate(-45deg);
+    transition: all 0.5s ease;
+    opacity: 0;
+}
+
+.about-holographic-card:hover {
+    transform: scale(1);
+    box-shadow: 0 0 20px rgba(255, 255, 0, 0.5);
+}
+
+.about-holographic-card:hover::before {
+    opacity: 1;
+    transform: rotate(-45deg) translateY(100%);
 }
 
 @keyframes gradient {
@@ -90,5 +215,17 @@
 
     100% {
         background-position: 0% 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-grid{
+        grid-template-columns: 1fr, 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-grid{
+        grid-template-columns: 1fr;
     }
 }
