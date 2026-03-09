@@ -209,20 +209,40 @@
   height: 5px;
   width: 10%;
   background: #f6aa1c;
-  background: linear-gradient(
-    90deg,
-    rgba(246, 170, 28, 1) 0%,
-    rgba(34, 9, 1, 1) 20%,
-    rgba(98, 23, 8, 1) 42%,
-    rgba(148, 27, 12, 1) 65%,
-    rgba(188, 57, 8, 1) 85%,
-    rgba(246, 170, 28, 1) 100%
-  );
+  background: linear-gradient(90deg,
+      rgba(246, 170, 28, 1) 0%,
+      rgba(34, 9, 1, 1) 20%,
+      rgba(98, 23, 8, 1) 42%,
+      rgba(148, 27, 12, 1) 65%,
+      rgba(188, 57, 8, 1) 85%,
+      rgba(246, 170, 28, 1) 100%);
   -webkit-text-fill-color: transparent;
   background-size: 500% auto;
   animation: gradient 10s ease-in-out infinite alternate;
   transition: transform 0.3s;
   border-radius: 20px;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  25% {
+    background-position: 50% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  75% {
+    background-position: 50% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 
