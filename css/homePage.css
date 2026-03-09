@@ -1,32 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+
 .top-sec {
-    height: 50vh;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: black;
+    color: white;
+    font-family: Orbitron;
+    padding: 80px 20px;
+}
+
+.top-sec h1 {
+    font-family: Orbitron;
+    font-weight: 800;
+    background: #f6aa1c;
+    background: linear-gradient(90deg,
+            rgba(246, 170, 28, 1) 0%,
+            rgba(34, 9, 1, 1) 20%,
+            rgba(98, 23, 8, 1) 42%,
+            rgba(148, 27, 12, 1) 65%,
+            rgba(188, 57, 8, 1) 85%,
+            rgba(246, 170, 28, 1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 500% auto;
+    animation: gradient 10s ease-in-out infinite alternate;
+    transition: 0.3s ease-in-out;
 }
 
 .profile-img {
     height: 200px;
     width: 200px;
     border-radius: 50%;
-    border: 20px rgb(0, 0, 0);
+    border: 20px rgb(255, 255, 255);
     margin-bottom: 20px;
     object-fit: cover;
+    transition: transform 0.3s;
 }
 
-
-.top-sec-container h1 {
-    font-weight: 600;
+.profile-img:hover {
+    transform: scale(1.2);
 }
 
-.top-sec-container p {
+.top-sec p {
     font-size: 24px;
     font-weight: 400;
+    font-family: Orbitron;
 }
 
-.resaume-container {
+.resume-container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -44,4 +69,26 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    25% {
+        background-position: 50% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    75% {
+        background-position: 50% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }
