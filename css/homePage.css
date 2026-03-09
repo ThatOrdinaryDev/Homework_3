@@ -54,12 +54,13 @@
 
 .about-sec {
     text-align: center;
-    padding: 120px 20px;
+    padding: 100px 29px;
     background: #1f1f1f;
     max-width: 900px;
     margin: auto;
     border-radius: 20px;
     color: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
 .section-heading {
@@ -125,6 +126,14 @@
     font-family: Orbitron;
     font-weight: 600;
     text-decoration: none;
+    transition: transform 0.3s;
+}
+
+.about-btn:hover {
+    background: linear-gradient(270deg, #ffcc33, #ff66cc);
+    box-shadow: 0 0 20px rgba(255, 255, 0, 0.5);
+    transition: 0.3s ease-in-out;
+    transform: translateY(-6px);
 }
 
 .resume-container {
@@ -209,6 +218,51 @@
     transform: rotate(-45deg) translateY(100%);
 }
 
+.section-divider {
+    border: none;
+    margin-top: 40px;
+    margin-bottm: 40px;
+}
+
+.get-in-touch-section {
+    text-align: center;
+    padding: 100px 29px;
+    background: #1f1f1f;
+    max-width: 900px;
+    margin: auto;
+    border-radius: 25px;
+    color: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.get-in-touch-btn {
+    display: inline-block;
+    margin-top: 60px;
+    padding: 14px 32px;
+    background: linear-gradient(270deg, #ff944f, #fa6d86);
+    color: white;
+    border-radius: 20px;
+    font-family: Orbitron;
+    font-weight: 600;
+    text-decoration: none;
+    transition: transform 0.3s;
+}
+
+.get-in-touch-btn:hover {
+    background: linear-gradient(270deg, #ffcc33, #ff66cc);
+    box-shadow: 0 0 20px rgba(255, 255, 0, 0.5);
+    transition: 0.3s ease-in-out;
+    transform: translateY(-6px);
+}
+
+.get-in-touch-description {
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.8;
+    font-size: 18px;
+    color: white;
+    font-family: Orbitron;
+}
 
 @keyframes gradient {
     0% {
