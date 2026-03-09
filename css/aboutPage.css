@@ -26,6 +26,11 @@
     object-fit: cover;
     border-radius: 15px;
     display: block;
+    transition: transform 0.3s;
+}
+
+.img-chunk img:hover{
+    transform: scale(1.3);
 }
 
 .about-me-description-block {
