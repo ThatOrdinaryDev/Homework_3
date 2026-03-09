@@ -193,7 +193,7 @@ body {
 }
 
 .holographic-card:hover {
-    transform: scale(0.5);
+    transform: scale(1);
     box-shadow: 0 0 20px rgba(255, 255, 0, 0.5);
 }
 
