@@ -69,8 +69,9 @@
 }
 
 .about-underline {
+    margin: 10px auto 40px;
     height: 5px;
-    width: 60px;
+    width: 100px;
     background: #f6aa1c;
     background: linear-gradient(90deg,
             rgba(246, 170, 28, 1) 0%,
@@ -84,7 +85,6 @@
     animation: gradient 10s ease-in-out infinite alternate;
     transition: transform 0.3s;
     border-radius: 20px;
-    margin: 10px, auto, 40px;
 }
 
 .about-description {
@@ -121,7 +121,7 @@
     padding: 14px 32px;
     background: linear-gradient(270deg, #ff944f, #fa6d86);
     color: white;
-    border-radius: 12px;
+    border-radius: 20px;
     font-family: Orbitron;
     font-weight: 600;
     text-decoration: none;
@@ -146,6 +146,7 @@
 .btn-download {
     padding: 14px 28px;
     background: linear-gradient(270deg, #ff944f, #fa6d86);
+    width: 156px;
     color: white;
     border-radius: 12px;
     font-family: Orbitron;
@@ -155,15 +156,17 @@
 .btn-outline {
     padding: 14px 28px;
     border: 1px solid #ff944f;
-    color: white;
     border-radius: 12px;
+    color: white;
+    background: #1f1f1f;
     font-family: Orbitron;
     text-decoration: none;
+    white-space: nowrap;
 }
 
 .about-holographic-card {
-    width: 70px;
-    height: 50px;
+    width: 156px;
+    height: 54px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -206,6 +209,7 @@
     transform: rotate(-45deg) translateY(100%);
 }
 
+
 @keyframes gradient {
     0% {
         background-position: 0% 50%;
@@ -229,13 +233,13 @@
 }
 
 @media (max-width: 768px) {
-    .about-grid{
+    .about-grid {
         grid-template-columns: 1fr, 1fr;
     }
 }
 
 @media (max-width: 480px) {
-    .about-grid{
+    .about-grid {
         grid-template-columns: 1fr;
     }
 }
