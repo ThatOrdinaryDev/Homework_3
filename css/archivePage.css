@@ -245,34 +245,6 @@ this would be so much simpler if we could use counter values as custom property 
     --index: 12;
 }
 
-.cards:has(input#item-14:checked) {
-    --index: 13;
-}
-
-.cards:has(input#item-15:checked) {
-    --index: 14;
-}
-
-.cards:has(input#item-16:checked) {
-    --index: 15;
-}
-
-.cards:has(input#item-17:checked) {
-    --index: 16;
-}
-
-.cards:has(input#item-18:checked) {
-    --index: 17;
-}
-
-.cards:has(input#item-19:checked) {
-    --index: 18;
-}
-
-.cards:has(input#item-20:checked) {
-    --index: 19;
-}
-
 /* general styling */
 *,
 ::before,
