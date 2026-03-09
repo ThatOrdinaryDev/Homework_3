@@ -10,7 +10,7 @@
     gap: 40px;
 }
 
-.img-storing-block{
+.img-storing-block {
     flex: 1;
     display: flex;
 }
@@ -20,7 +20,7 @@
     height: 100%;
 }
 
-.img-chunk img{
+.img-chunk img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -30,7 +30,7 @@
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
-.img-chunk img:hover{
+.img-chunk img:hover {
     transform: scale(1.05);
     box-shadow: 0 0 20px rgba(180, 74, 165, 1);
 }
@@ -85,6 +85,97 @@
     transition: transform 0.3s;
 }
 
+.middle-block-section {
+    padding: 80px 10%;
+}
+
+.edu-n-exp-container {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.ene-card {
+    flex: 1;
+    background: #2e2e2e;
+    color: white;
+    padding: 40px;
+    border-radius: 15px;
+    font-family: Orbitron;
+    text-align: start;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.ene-heading {
+    font-weight: 900;
+    margin-bottom: 34px;
+}
+
+.ene-sub-heading {
+    font-size: 24px;
+    margin-bottom: 34px;
+}
+
+.ene-uni-title {
+    font-size: 17px;
+    margin-bottom: 34px;
+}
+
+.ene-year-ped {
+    font-size: 17px;
+    margin-bottom: 34px;
+}
+
+.ene-description {
+    font-size: 17px;
+}
+
+.proj-word {
+    text-decoration: none;
+}
+
+.edu-n-exp-heading {
+    font-family: Orbitron;
+    font-size: 40px;
+    font-weight: 800;
+    background: #f6aa1c;
+    background: linear-gradient(90deg,
+            rgba(246, 170, 28, 1) 0%,
+            rgba(34, 9, 1, 1) 20%,
+            rgba(98, 23, 8, 1) 42%,
+            rgba(148, 27, 12, 1) 65%,
+            rgba(188, 57, 8, 1) 85%,
+            rgba(246, 170, 28, 1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 500% auto;
+    animation: gradient 10s ease-in-out infinite alternate;
+    transition: transform 0.3s;
+}
+
+.edu-n-exp-underline {
+    align-items: start;
+    height: 5px;
+    width: 10%;
+    background: #f6aa1c;
+    background: linear-gradient(90deg,
+            rgba(246, 170, 28, 1) 0%,
+            rgba(34, 9, 1, 1) 20%,
+            rgba(98, 23, 8, 1) 42%,
+            rgba(148, 27, 12, 1) 65%,
+            rgba(188, 57, 8, 1) 85%,
+            rgba(246, 170, 28, 1) 100%);
+    -webkit-text-fill-color: transparent;
+    background-size: 500% auto;
+    animation: gradient 10s ease-in-out infinite alternate;
+    transition: transform 0.3s;
+    border-radius: 20px;
+    margin-bottom: 40px;
+}
+
 
 @keyframes gradient {
     0% {
@@ -105,5 +196,20 @@
 
     100% {
         background-position: 0% 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .img-storing-block {
+        display: none;
+    }
+
+    .about-me-description-block {
+        flex: 1;
+        max-width: 100%;
+    }
+
+    .edu-n-exp-container {
+        flex-direction: column;
     }
 }
